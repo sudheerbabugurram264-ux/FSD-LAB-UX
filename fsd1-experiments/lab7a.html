@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>lab 7</title>
+</head>
+<body>
+    <h3>lab 7 experiment</h3>
+    <h2 id="heading">document object demo</h2>
+    <button onclick="showdocumentinfo()">document info</button>
+    <p id="para"></p>
+    <script>
+        function showdocumentinfo() {
+            document.getElementById("heading").innerHTML="document properties & methods"
+            console.log("title",document.title)
+           console.log("URL",document.URL)
+            console.log("lastModified",document.lastModified)
+        }
+    </script>
+</body>
+</html>

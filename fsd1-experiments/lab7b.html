@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>lab 7b</title>
+</head>
+<body>
+    <h3>lab 7b experiment</h3>
+    <button onclick="showdocumentinfo()">show window info</button>
+    <button onclick="openwindow()">open new window</button>
+    <script>
+        function showdocumentinfo() {
+            document.getElementById("heading").innerHTML="document properties & methods"
+            console.log("title",document.title)
+           console.log("URL",document.URL)
+            console.log("lastModified",document.lastModified)
+        }
+        function showwindowinfo() {
+            console.log("window height is ",window.innerheight)
+            console.log("window width is ",window.innerwidth)
+        }
+        function openwindow() {
+            window.open("https://www.google.com","blank","width=400,height=300")
+        }
+    </script>
+</body>
+</html>
